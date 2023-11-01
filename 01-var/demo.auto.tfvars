@@ -1,0 +1,1 @@
+auto_num1="this is auto tfvars"

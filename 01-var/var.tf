@@ -4,14 +4,6 @@ variable "sample_string" {
   default = "My sample variable program"
 }
 
-output "sample_string" {
-  value =var.sample_string
-}
-
-output "sample_string1" {
-  value = "this is my first sample string = ${var.sample_string}"
-}
-
 variable "sample_number" {
   default = 100
 }
@@ -29,9 +21,6 @@ variable "sample_list" {
   default = [ 100,"mani",true, 49.3]
 }
 
-output "sample_list" {
-  value = var.sample_list[2]
-}
 
 #Distionary or map
 
@@ -45,6 +34,9 @@ variable "sample_dict" {
 
 }
 
-output "sample_dict" {
-  value = var.sample_dict["boolean1"]
-}
+variable "env" {}
+
+variable "auto_num1" {}
+
+variable "sample1" {}
+variable "latest" {}
