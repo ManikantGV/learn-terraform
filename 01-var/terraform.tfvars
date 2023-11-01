@@ -1,3 +1,3 @@
-//sample1=200
+sample1=200
 //env=prd
 env="test"
