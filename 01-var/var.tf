@@ -36,7 +36,7 @@ variable "sample_dict" {
 
 variable "env" {}
 
-variable "auto_num1" {}
+//variable "auto_num1" {}
 
-variable "sample1" {}
-variable "latest" {}
+//variable "sample1" {}
+//variable "latest" {}
