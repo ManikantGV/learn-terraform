@@ -1,2 +1,2 @@
-sample1=200
-latest="teeraform"
+//sample1=200
+env=prd
