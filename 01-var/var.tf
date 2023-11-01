@@ -34,7 +34,9 @@ variable "sample_dict" {
 
 }
 
-variable "env" {}
+variable "env" {
+  default = "PRDO"
+}
 
 //variable "auto_num1" {}
 
