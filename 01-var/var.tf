@@ -39,4 +39,4 @@ variable "env" { }
 variable "auto_num1" {}
 
 variable "sample1" {}
-//variable "latest" {}
+variable "latest" {}

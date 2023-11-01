@@ -29,6 +29,6 @@ output "sample1" {
   value = var.sample1
 }
 #
-#output "latest" {
-#  value = var.latest
-#}
+output "latest" {
+  value = var.latest
+}

@@ -1,3 +1,3 @@
 sample1=200
-//env=prd
+latest="My wish"
 env="test"
