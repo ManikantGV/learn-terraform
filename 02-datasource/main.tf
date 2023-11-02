@@ -15,9 +15,9 @@
 #  value = data.aws_security_group.single
 #}
 
-data "aws_security_group" "test" {}
+data "aws_security_groups" "test" {}
 
 output "all" {
-  value = data.aws_security_group.test
+  value = data.aws_security_groups.test
 }
 
