@@ -1,11 +1,10 @@
 
-
 data "aws_security_group" "test" { }
 
 
 data "aws_security_group" "single" {
-  count = length(data.aws_security_group.test.ids)
-  id=data.aws_security_group.test.ids[count.index]
+  count = length(data.aws_security_group.test.id)
+  id=data.aws_security_group.test.id[count.index]
 }
 
 output "all_sg" {
