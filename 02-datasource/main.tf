@@ -20,7 +20,9 @@ data "aws_security_groups" "test" {}
 data "aws_security_group" "single" {
   count = length(data.aws_security_groups.test.ids)
 }
+
 output "all" {
   value = data.aws_security_groups.test
 }
+
 
