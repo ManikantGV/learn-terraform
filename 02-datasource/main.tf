@@ -19,6 +19,11 @@ data "aws_security_group" "selected" {
   name="allow-all"
 }
 
-output "secutry_group_op" {
+output "secutry_group_op_id" {
   value = data.aws_security_group.selected.id
+
+}
+output "secutry_group_op_name" {
+  value = data.aws_security_group.selected.name
+
 }
