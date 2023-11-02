@@ -15,14 +15,11 @@
 #  value = data.aws_security_group.single
 #}
 
-data "aws_security_group" "selected" {
+data "aws_security_group" "all_sg" {
 #  name="allow-all"
 }
 
 output "security_group_op_id" {
-  value = data.aws_security_group.selected.id
+  value = data.aws_security_group.all_sg
+}
 
-}
-output "security_group_op_name" {
-  value = data.aws_security_group.selected.name
-}
