@@ -22,7 +22,7 @@ data "aws_security_group" "single" {
 }
 
 output "all" {
-  value = data.aws_security_group.single.id
+  value = data.aws_security_group.single.id[0]
 }
 
 
