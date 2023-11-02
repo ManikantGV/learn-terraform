@@ -15,11 +15,9 @@
 #  value = data.aws_security_group.single
 #}
 
-data "aws_security_group" "all_sg" {
-#  name="allow-all"
-}
+data "aws_security_group" "test" {}
 
-output "security_group_op_id" {
-  value = data.aws_security_group.all_sg
+output "all" {
+  value = data.aws_security_group.test
 }
 
