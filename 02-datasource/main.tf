@@ -17,13 +17,17 @@
 
 data "aws_security_groups" "test" {}
 
-#data "aws_security_group" "single" {
-#  count = length(data.aws_security_groups.test.ids)
-#  id=data.aws_security_groups.test.ids[count.index]
-#}
+data "aws_security_group" "single" {
+count = length(data.aws_security_groups.test.ids)
+id=data.aws_security_groups.test.ids[count.index]
+}
 
 output "all" {
   value = data.aws_security_groups.test
+}
+
+output "single" {
+  value = data.aws_security_group.single
 }
 
 
