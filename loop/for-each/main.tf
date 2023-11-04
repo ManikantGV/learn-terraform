@@ -1,7 +1,7 @@
 resource "null_resource" "fruits" {
   #count=length(var.fruits)
   provisioner "local-exec" {
-    command="echo fruit name -${var.fruits}"
+    command="echo fruit name -${length(var.fruits)}"
   }
 }
 
