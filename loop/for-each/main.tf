@@ -10,9 +10,15 @@ resource "null_resource" "fruits" {
 
 variable "fruits" {
   default = {
-    apple=10
-    orange=20
-    banana=30
+    apple={
+      count=10
+    }
+    orange={
+      count=20
+    }
+    banana={
+      count=30
+    }
   }
 
 }
